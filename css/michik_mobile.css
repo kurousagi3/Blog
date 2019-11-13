@@ -1,0 +1,233 @@
+*{
+	margin: auto;
+}
+body{
+	background-color: yellow;
+	background-size:cover;
+}
+
+a:visited{
+	color:red
+}
+a:hover{
+	color: white;
+   border: solid 2px;
+   background-color: blue;
+}
+h1{
+	color: white;
+  margin-left: 0;
+	font-size: 20px;
+}
+h2{
+	background-color: #2014faf7;
+	color:white;
+}
+h3{
+  font-size: 1em;
+}
+header{
+  background-color: blue;
+	height: 60px;
+	margin: 0;
+  width: 100%;
+  margin-top: -68px;
+  display: flex;
+ 	position: fixed;
+}
+.header{
+  margin: auto;
+}
+.fukidashi{
+  display: none;
+}
+.car img{
+	width: 36%;
+  top: 380px;
+  right: 0px;
+  position: fixed;
+  z-index: 2;
+}
+.nav-drawer{
+    margin-left: 10px;
+}
+/*チェックボックスは非表示*/
+.nav-unshown {
+  display:none;
+}
+/*アイコンのスペース*/
+#nav-open {
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+  vertical-align: middle;
+}
+#nav-open span, #nav-open span:before, #nav-open span:after {
+  position: absolute;
+  height: 3px;/*線の太さ*/
+  width: 30px;/*長さ*/
+  border-radius: 3px;
+  background: black;
+  display: block;
+  content: '';
+  cursor: pointer;
+}
+#nav-open span:before {
+  bottom: -8px;
+}
+#nav-open span:after {
+  bottom: -16px;
+}
+/*閉じる用の薄黒カバー*/
+#nav-close {
+  display: none;/*はじめは隠しておく*/
+  position: fixed;
+  z-index: 99;
+  top:  0;/*全体に広がるように*/
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: .3s ease-in-out;
+}
+/*チェックが入ったらもろもろ表示*/
+#nav-input:checked ~ #nav-close {
+  display: block;/*カバーを表示*/
+  background: black;
+  top:60px;
+  opacity: .5;
+}
+#nav-input:checked ~ .global-nav {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);/*中身を表示（左へスライド）*/
+  z-index: 9998;
+}
+#nav-input:checked ~ .global-nav{
+　-webkit-transform: translateY(0%);
+  transform: translateY(0%);
+}
+#nav-input:checked ~ #nav-open span{
+  background: transparent;
+}
+
+#nav-input:checked ~ #nav-open span:before{
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 10px;
+}
+#nav-input:checked ~ #nav-open span:after{
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 10px;
+ }
+/*中身*/
+.global-nav{
+  overflow: auto;
+  position: fixed;
+  top: 50px;
+  right: 0;
+  z-index: 9999;/*最前面*/
+  width: 100%;
+  background-color: white;
+  transition: .3s ease-in-out;/*表示*/
+  -webkit-transform: translateY(-130%);
+  transform: translateY(-130%);/*左に隠しておく*/
+}
+.global-nav ul {
+	list-style: none;
+}
+.global-nav ul a{
+	text-decoration: none;
+	color: red;
+	font-size: 14px;	
+	padding: 0 	2px;
+}
+.global-nav li ,.global-nav p{
+	margin: 5px 30px	;
+}
+
+.kantoustamp{
+	width: 90%;
+	border: dashed red;
+  margin-top:60px; 
+	padding: 5px;
+}
+.kantoustamp img{
+	width: 20%
+	margin: 10px;
+}
+.btn-sticky {
+  display: inline-block;
+  padding: 0.5em 1em;
+  margin: 5px;	
+  background: #f7f7f7;
+  border-left: solid 6px #ff7c5c;
+  color: #ff7c5c;
+  font-weight: bold;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  width: 70px;
+}
+.btn-sticky:active {
+  box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+  transform: translateY(2px);
+}
+#chiba,#tochigi{
+	width: 94%;
+	margin-top: 10px;
+	font-size: 12px;
+	background-color: #fef4e0;
+}
+#saitama,#gunma{
+  width: 94%;
+	margin-top: 10px;
+	font-size: 12px;
+	background-color: #daffe1;
+}
+#tokyo,#yamanashi{
+  width: 94%;
+	margin-top: 10px;
+	font-size: 12px;
+	background-color: white;
+}
+#kanagawa,#nagano{
+  width: 94%;
+	margin-top: 10px;
+	font-size: 12px;
+	background-color: #fdd5e4;	
+}
+#ibaraki{
+  width: 94%;
+	margin-top: 10px;
+	font-size: 12px;
+	background-color: #e0f8fe;		
+}
+tr img{
+	width: 100%;
+}
+td,th{
+	width: 18%;
+}
+footer{
+	background-color: #2014faf7;
+	margin: 0;
+	color: white;
+} 
+.link{
+  margin: 5px;
+  text-align: center;
+}
+.link img{
+  width: 94%;
+ 
+}
+footer ul{
+	list-style:none;
+}
+footer table{
+	width: 20%;
+}
+.footer{
+  width: 100%;
+}
+.display-none{
+  display: none;
+}

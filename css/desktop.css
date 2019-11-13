@@ -1,0 +1,178 @@
+*{
+	margin: auto;
+	text-align: center;
+	width: 100%;
+	font-size: 16px;
+}
+body{
+	background-image: url("../image/background.jpg");
+	background-size:100%;
+}
+a:link{color: black}
+a:visited{color:black}
+a:hover{
+	color: white;
+    border: solid 2px;
+    background-color: #b541d6;
+}
+strong{
+  color: #2421f3;
+}
+h1{
+	text-align: left;
+	margin: auto 0;
+	margin-left: 0;
+	width: 40%;
+	font-size: 1.8em;
+}
+h3{
+	color: white;
+}
+h4{
+	color: white;
+	background-color:#f510108f;
+}
+h5{
+  padding: 12px;
+}
+.header-top{
+	color: black;
+	background-color: #e91e63;
+	display: flex;
+}
+.header-top img{
+	width: 6%;
+	left: 5%;
+	margin-right: 0;
+}
+.welcome{
+	width: 80%;
+}
+.welcome h5{
+	text-align: left;
+}
+.news{
+	color: red;
+	font-weight: bold;
+}
+/*チェックボックスは非表示*/
+.nav-unshown {
+  display:none;
+}
+.nav-drawer{
+	width: 30%;
+	margin-bottom: 0;
+	margin:  auto 5px 0;
+}
+.global-nav ul,#nav-content ul{
+	list-style: none;
+	display: flex;
+    margin: 0;
+    padding: 0;
+}
+.global-nav{
+	margin-bottom: 0;
+}
+#nav-content{
+	background-color: #0000ff63;
+}
+#nav-content table,.genre table{
+	width: 90%;
+}
+#nav-content tr,#nav-content td,.genre tr,.genre td{
+	width: 12%;
+}
+.genre{
+	padding-top: 5px;
+}
+main{	
+	display: block;
+}
+iframe{
+	width: 90%;
+	height: 300px;	
+	margin-top: 10px;
+    background-image: url(../image/84133.jpg);
+    background-size: cover;
+}
+aside{
+	width: 90%;
+	display: flex;
+}
+.area-list{
+	width: 40%;
+	background-color: #0000ff8f;
+	margin: 5px;
+}
+.area-list ul{
+	list-style: none;
+	padding: 0;
+}
+.area-list img{
+	width: 90%;
+}
+#map-container{
+	margin: 5px auto 0;
+}
+.top-link{
+	width: 90%;
+}
+.top-link ul{
+	display: flex;
+	list-style: none;
+	padding: 0;
+}
+.top-link li{
+	margin: 3px;
+}
+footer{
+	background-color: #e91e63;
+}
+.footer{
+	display: flex;
+	width: 90%;
+	margin-top: 10px;
+}
+.footer ul{
+	width: 20%;
+	list-style: none;
+	padding: 0;
+	margin: 10px  auto auto 0;
+}
+.prof li{
+	background-color: #f971b1;
+	text-align: left;
+	padding: 0 5px;
+}
+/*冒険の書ページ　更新履歴*/
+.lesson{
+	color: #b73a3a;
+	width: 96%;
+	background-image: url("../image/84133.jpg");
+    background-size: cover;
+}
+.lesson-h1{
+	margin: auto;
+}
+.lesson table{
+	width: 60%;
+	margin-top: 15px;
+}
+.lesson td{
+	text-align: left;
+	padding:10px 5px; 
+	border-style: solid;
+}	
+.link ul{
+	width: 54%;
+	margin-top: 5px;
+    padding: 0;
+   	display: flex;
+}
+.link li{
+	list-style: none;
+	width: 30%;
+}
+.link img{
+	height: 100%;
+}

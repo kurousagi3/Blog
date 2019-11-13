@@ -1,0 +1,216 @@
+*{
+	margin: auto;
+  padding: 0;
+	text-align: center;	
+  font-size: 12px;
+  color: black;
+  width: 100%;
+
+}
+body{
+  background-image: url("../image/background.jpg");
+  background-size:100%;
+}
+a:link{color: black}
+a:visited{color:black;}
+a:hover{
+	color: blue;
+    border: solid 2px;
+    background-color: white;
+}
+strong{
+  color: #2421f3;
+}
+header{
+  width: 100%;
+  margin-top: -68px;
+}
+.header-top {
+	display: flex;
+  position: fixed;
+  background-color: #e91e63;
+  height: 58px
+}
+h1{
+  margin-left: 10px;
+  font-size: 1.4em;
+  text-align: left;
+}
+h4{
+  color: white;
+  font-size: 1.6em;
+}
+h5{
+  color: black;
+  padding-top: 70px;
+}
+.header-top img{
+  margin: auto 0; 
+  width: 12%;
+}
+.nav-drawer {
+  position: relative;
+  margin: auto 5px;
+  width: 12%;
+}
+/*チェックボックスは非表示*/
+.nav-unshown {
+  display:none;
+}
+/*アイコンのスペース*/
+#nav-open {
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+  vertical-align: middle;
+}
+#nav-open span, #nav-open span:before, #nav-open span:after {
+  position: absolute;
+  height: 3px;/*線の太さ*/
+  width: 30px;/*長さ*/
+  border-radius: 3px;
+  background: black;
+  display: block;
+  content: '';
+  cursor: pointer;
+}
+#nav-open span:before {
+  bottom: -8px;
+}
+#nav-open span:after {
+  bottom: -16px;
+}
+/*閉じる用の薄黒カバー*/
+#nav-close {
+  display: none;/*はじめは隠しておく*/
+  position: fixed;
+  background: black;
+  z-index: 99;
+  top:  60px;/*全体に広がるように*/
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: .3s ease-in-out;
+}
+/*中身*/
+.global-nav{
+  overflow: auto;
+  position: fixed;
+  top: 50px;
+  right: 0;
+  z-index: 9999;/*最前面*/
+  width: 100%;
+  background-color: white;
+  transition: .3s ease-in-out;/*表示*/
+  -webkit-transform: translateY(-170%);
+  transform: translateY(-170%);/*左に隠しておく*/
+}
+/*チェックが入ったらもろもろ表示*/
+#nav-input:checked ~ #nav-close {
+  display: block;/*カバーを表示*/
+  opacity: .5;
+}
+#nav-input:checked ~ .global-nav {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);/*中身を表示（左へスライド）*/
+  z-index: 9998;
+}
+#nav-input:checked ~ .global-nav{
+　-webkit-transform: translateY(0%);
+  transform: translateY(0%);
+}
+#nav-input:checked ~ #nav-open span{
+  background: transparent;
+}
+
+#nav-input:checked ~ #nav-open span:before{
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 10px;
+}
+#nav-input:checked ~ #nav-open span:after{
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 10px;
+ }
+.news{
+  color: red;
+   font-weight: bold;
+}
+#nav-content{
+  background-color: #0000ff63;
+}
+#nav-content tr,#nav-content td,.genre tr,.genre td{
+  width: 12%;
+}
+.genre a{
+  font-size: 13px;
+}
+iframe{
+  width: 96%;
+  height: 300px;
+  background-image: url(../image/84133.jpg);
+  background-size: cover;
+}
+.area-list{
+	background-color: #905cfb8f;
+	margin: 5px;
+}
+.area-list ul{
+	list-style: none;
+}
+.top-link{
+  width: 90%;
+}
+.top-link ul{
+  list-style: none;
+  padding: 0;
+}
+.top-link li{
+  margin: 3px;
+}
+canvas{
+  width: 96%;
+}
+footer{
+	background-color: #ff7eacc9;
+}
+footer ul{
+  margin: 15px 0;
+}
+footer img{
+  width: 50%;
+}
+/*冒険の書ページ　更新履歴*/
+.lesson{
+  color: #b73a3a;
+  width: 96%;
+  background-image: url("../image/84133.jpg");
+  background-size: cover;
+  margin: 60px auto;
+}
+.lesson-h1{
+  margin: auto;
+}
+.lesson table{
+  width: 80%;
+  padding-top: 30px;
+}
+.lesson td{
+  text-align: left;
+  padding:10px 5px; 
+  border-style: solid;
+}
+.link ul{
+  width: 90%;
+  margin-top: 5px;
+  padding: 0
+}
+.link li{
+  display: inline-block;
+  list-style: none;
+  width: 30%;
+}
+.link img{
+  width: 100%;
+}
