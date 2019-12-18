@@ -2,17 +2,16 @@
 	margin: auto;
 }
 body{
-	background-color: yellow;
-	background-size:cover;
+	background-color: #f9f9dcf5;
 }
-
+a:link{
+  clear: blue;
+}
 a:visited{
-	color:red
+	color:#9b29da;
 }
 a:hover{
-	color: white;
-   border: solid 2px;
-   background-color: blue;
+	color: blue;
 }
 h1{
 	color: white;
@@ -38,13 +37,10 @@ header{
 .header{
   margin: auto;
 }
-.fukidashi{
-  display: none;
-}
 .car img{
-	width: 36%;
-  top: 380px;
-  right: 0px;
+	width: 20%;
+  bottom: 16px;
+  right: 0;
   position: fixed;
   z-index: 2;
 }
@@ -137,7 +133,7 @@ header{
 }
 .global-nav ul a{
 	text-decoration: none;
-	color: red;
+	color: blue;
 	font-size: 14px;	
 	padding: 0 	2px;
 }
