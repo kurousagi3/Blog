@@ -14,6 +14,9 @@ body{
 	text-decoration: none;
 	padding: 5px;
 }
+a{
+	color: white;
+}
 a:link{
 	clear: white;
 }
@@ -182,5 +185,4 @@ footer ul{
 .footer li{
 	padding: 5px 10px;
 	text-align: left;
-	color: white;
 }
