@@ -27,6 +27,8 @@ a:hover{
 	color: white;
     background-color: blue;
 }
+a img{border: none;
+}
 h1{
 	color: #3f51b5;
 	background-color: white;
@@ -39,6 +41,7 @@ h1{
 h2{
 	color:white;
 	text-align: left;
+	background-color: #2014faf7;
 }
 h3{
 	text-align: center;
@@ -89,7 +92,7 @@ header{
 	margin: 3px;	
 }
 .kantoustamp{
-	width: 82%;
+	width: 80%;
 	margin: 10px;
 	margin-left: 10%;
 	display: flex;
@@ -98,7 +101,7 @@ header{
 }
 .kantoustamp img{
 	margin: auto;	width: 20%;
-	height: 20%;
+	height: 280%;
 }
 .kantoustamp p{
 	width: 40%;
@@ -106,7 +109,7 @@ header{
 	text-align: left;
 }
 .button{
-	width: 40%;
+	width: 38%;
 	margin: auto;
 	text-align: center;
 }
@@ -126,41 +129,43 @@ header{
   transform: translateY(2px);
 }
 #chiba,#tochigi{
-	width: 84%;
+	width: 80%;
 	margin-left: 10%;
 	font-size: 12px;
 	background-color: #fef4e0;
 }
 #saitama,#gunma{
-	width: 84%;
+	width: 80%;
 	margin-left: 10%;
 	font-size: 12px;
 	background-color: #daffe1;
 }
 #tokyo,#yamanashi{
-	width: 84%;
+	width: 80%;
 	margin-left: 10%;
 	font-size: 12px;
 	background-color: white;
 }
 #kanagawa,#nagano{
-	width: 84%;
+	width: 80%;
 	margin-left: 10%;
 	font-size: 12px;
 	background-color: #fdd5e4;	
 }
 #ibaraki{
-	width: 84%;
+	width: 80%;
 	margin-left: 10%;
 	font-size: 12px;
 	background-color: #e0f8fe;		
 }
 table{
 	margin-left: 10px;
-	width: 98%;
+	width: 98%;	
+	border-collapse: collapse;
 }
 tr img{
 	width: 100%;
+	vertical-align: bottom;
 }
 td,th{
 	width: 10%;
@@ -168,7 +173,7 @@ td,th{
 }
 .link,.link p{
 	text-align: center;
-	width: 84%;
+	width: 80%;
 	margin-left: 10%;
 	background-color: gray;
 }
