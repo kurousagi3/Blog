@@ -8,6 +8,9 @@ body{
 	background-image: url("../image/background.jpg");
 	background-size:100%;
 }
+img{
+	vertical-align: bottom;
+}
 a:link{color: black}
 a:visited{color:black}
 a:hover{
