@@ -143,8 +143,7 @@ header{
 .kantoustamp{
 	width: 90%;
 	border: dashed red;
-  margin-top:60px; 
-	padding: 5px;
+;	padding: 5px;
 }
 .kantoustamp img{
 	width: 20%
