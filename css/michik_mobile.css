@@ -1,43 +1,43 @@
 *{
-	margin: auto;
+  margin: auto;
 }
 body{
-	background-color: #f9f9dcf5;
+  background-color: #f9f9dcf5;
 }
 a:link{
   clear: blue;
 }
 a:visited{
-	color:#9b29da;
+  color:#9b29da;
 }
 a:hover{
-	color: blue;
+  color: blue;
 }
 h1{
-	color: white;
+  color: white;
   margin-left: 0;
-	font-size: 20px;
+  font-size: 20px;
 }
 h2{
-	background-color: #2014faf7;
-	color:white;
+  background-color: #2014faf7;
+  color:white;
 }
 h3{
   font-size: 1em;
 }
 header{
   background-color: blue;
-	height: 60px;
-	margin: 0;
+  height: 60px;
+  margin-top: -18%;
   width: 100%;
   display: flex;
- 	position: fixed;
+  position: fixed;
 }
 .header{
   margin: auto;
 }
 .car img{
-	width: 20%;
+  width: 20%;
   bottom: 16px;
   right: 0;
   position: fixed;
@@ -128,31 +128,32 @@ header{
   transform: translateY(-130%);/*左に隠しておく*/
 }
 .global-nav ul {
-	list-style: none;
+  list-style: none;
 }
 .global-nav ul a{
-	text-decoration: none;
-	color: blue;
-	font-size: 14px;	
-	padding: 0 	2px;
+  text-decoration: none;
+  color: blue;
+  font-size: 14px;  
+  padding: 0  2px;
 }
 .global-nav li ,.global-nav p{
-	margin: 5px 30px	;
+  margin: 5px 30px  ;
 }
 
 .kantoustamp{
-	width: 90%;
-	border: dashed red;
-	padding: 5px;
+  width: 90%;
+  border: dashed red;
+  padding: 5px;
+  margin-top: 18%;
 }
 .kantoustamp img{
-	width: 20%
-	margin: 10px;
+  width: 20%
+  margin: 10px;
 }
 .btn-sticky {
   display: inline-block;
   padding: 0.5em 1em;
-  margin: 5px;	
+  margin: 5px;  
   background: #f7f7f7;
   border-left: solid 6px #ff7c5c;
   color: #ff7c5c;
@@ -165,45 +166,45 @@ header{
   transform: translateY(2px);
 }
 #chiba,#tochigi{
-	width: 94%;
-	margin-top: 10px;
-	font-size: 12px;
-	background-color: #fef4e0;
+  width: 94%;
+  margin-top: 10px;
+  font-size: 12px;
+  background-color: #fef4e0;
 }
 #saitama,#gunma{
   width: 94%;
-	margin-top: 10px;
-	font-size: 12px;
-	background-color: #daffe1;
+  margin-top: 10px;
+  font-size: 12px;
+  background-color: #daffe1;
 }
 #tokyo,#yamanashi{
   width: 94%;
-	margin-top: 10px;
-	font-size: 12px;
-	background-color: white;
+  margin-top: 10px;
+  font-size: 12px;
+  background-color: white;
 }
 #kanagawa,#nagano{
   width: 94%;
-	margin-top: 10px;
-	font-size: 12px;
-	background-color: #fdd5e4;	
+  margin-top: 10px;
+  font-size: 12px;
+  background-color: #fdd5e4;  
 }
 #ibaraki{
   width: 94%;
-	margin-top: 10px;
-	font-size: 12px;
-	background-color: #e0f8fe;		
+  margin-top: 10px;
+  font-size: 12px;
+  background-color: #e0f8fe;    
 }
 tr img{
-	width: 100%;
+  width: 100%;
 }
 td,th{
-	width: 18%;
+  width: 18%;
 }
 footer{
-	background-color: #2014faf7;
-	margin: 0;
-	color: white;
+  background-color: #2014faf7;
+  margin: 0;
+  color: white;
 } 
 .link{
   margin: 5px;
@@ -214,7 +215,7 @@ footer{
  
 }
 footer ul{
-	list-style:none;
+  list-style:none;
   width: 80%;
 }
 .display-none{
